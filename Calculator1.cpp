@@ -1,52 +1,53 @@
 #include<stdio.h>
 #include<stdlib.h> 
 #include<conio.h>
-int sum(int x, int y)
+int sum(int a, int b)
 {
-	return (x + y);
+	return (a + b);// считает сумму
 }
-int mult(int x, int y)
+int mult(int a, int b)
 {    
-	return (x*y);
+	return (a*b);// считает произведение
 }
-int dev(int x, int y)
+int dev(int a, int b)
 {    
-	return(x/y);
+	return(a/b);// считает деление 
 }
-unsigned int pow( unsigned int x)
+int pow(int a)
 {  
-	int p=1, i,b=5;
-	for (i = 1; i <= b; i++) 
-	p = x*p;
+	int p=1, i,b=3;
+	for (i = 1; i <= b; i++) //вычисляет a в стпени b
+	p = a*p;
 	return(p);
 	
 }
-int sub(int x, int y)
+int sub(int a, int b)
 {
-	return(x-y); 
+	return(a-b); // вычисляет разность 
 }
-float sqrt(float x1) 
+int my_sqrt(int x)
 {
-	float S = x1, aa = 1, bb = x1;
-	while (fabs(aa - bb)>0.1)   
-	{ 
-	aa = (aa + bb) / 2;
-	bb = S / aa; 
-	}
-	return (aa + bb) / 2;
+    int x1 = 3;
+	int a = 25;
+	x = 0.5*(x1 + a / x1);
+	while (x % 10 == 0)
+		x = 0.5*(x + a / x);
+
+	return(x);
 }
+
 
 
 
 int main() 
 {
-int a=10, b=5,r,r2,r3,r4,r5;
-float r6;
+int a=25, b=3,r,r2,r3,r4,r5;
+int r6;
 r=sum(a,b);   printf("r=%d",r);
 r2=mult(a,b); printf("\nr2=%d",r2);
 r3=dev(a,b);  printf("\nr3=%d",r3);
-r4=pow(a);    printf("\nr4=%d",r4); 
+r4=pow(a);    printf("\nr4=%d",r4); // выводим полученные результаты 
 r5=sub(a,b);  printf("\nr5=%d",r5);
-r6=sqrt(a);   printf("\nr6=%.2f",r6);         
+r6=my_sqrt(a);   printf("\nr6=%d",r6);         
 _getch();      
 }
