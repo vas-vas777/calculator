@@ -1,1 +1,4 @@
 language: C
+./configure && make && make test
+script Calculator1.cpp
+compiler:gcc
