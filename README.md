@@ -1,2 +1,2 @@
-# lab2
+# lab
 Calculator with static digits
