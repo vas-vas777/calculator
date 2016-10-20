@@ -1,18 +1,18 @@
-language c
+language: с
 os:
- -windows 10
+- osx
 matrix:
- includ:
-     -os: windows
-     env: COMPILER_NAME=gcc 
-     addons:
-     apt:
-      packages:
-      -g++-5
-      sources: &sources
-      -llvm-toolchain-precise
-      -ubuntu-toolchain-r-test
-script
--mkdir build
--cd build
--cmake .. && make
+  include:
+    - os: linux
+      env: COMPILER_NAME=gcc CXX=g++-5 CC=gcc-5
+      addons:
+        apt:
+          packages:
+            - g++-5
+          sources: &sources
+            - llvm-toolchain-precise
+            - ubuntu-toolchain-r-test
+script:
+- mkdir build
+- cd build
+- cmake .. && make
