@@ -2,8 +2,8 @@
 #include <catch.hpp>
 
 SCENARIO("calculator sum", "[sum]") {
-    int x = ;
-    int y = ;
+    int x =3 ;
+    int y =4 ;
     
     int rv = sum( x, y );
     
