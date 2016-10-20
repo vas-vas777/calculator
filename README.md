@@ -1,2 +1,4 @@
-# lab
-Calculator with static digits
+
+Calculator
+
+Build Status
