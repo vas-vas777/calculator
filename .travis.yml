@@ -21,7 +21,3 @@ matrix:
           packages:
             - clang-3.8
           sources: *sources
-          script:
-           - mkdir build
-           - cd build
-           - cmake .. && make
