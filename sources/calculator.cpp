@@ -12,7 +12,7 @@ float dev(float x, float y)
 }
 float pow(float x, float y)
 {
-	unsigned int p = 1, i;
+	float p = 1, i;
 	for (i = 1; i <= y; i++) 
 	{
 		p = p*x;
