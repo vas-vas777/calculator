@@ -10,15 +10,21 @@ float dev(float x, float y)
 {
 	return(x / y);
 }
-float pow(float x, float y)
+float pow ( float a )
 {
-	float p = 1, i;
-	for (i = 1; i <= y; i++) 
+	unsigned int s = 2;
+	float a2 = a;
+	
+	if ( s != 0 ) 
 	{
-		p = p*x;
+			for (int i = 1; i < s; i++)
+		{
+			a = a * a2;
+		}
 	}
-	return(p);
-}
+		else a = 1.0;
+	
+	return (float) a;
 float sq(float x)
 {
 	unsigned int div = 1, rslt = 0;
