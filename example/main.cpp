@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h> 
-#include<conio.h>
+
 #include<calculator.hpp>
 
 int main()
@@ -15,5 +15,5 @@ int main()
 	r4 = pow(a);    printf("\nr4=%f", r4); 
 	r5 = sub(a, b);  printf("\nr5=%f", r5);
 	r6 = sq(a);   printf("\nr6=%f", r6);
-	_getch();
+	system("pause");
 }
