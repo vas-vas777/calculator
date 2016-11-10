@@ -23,13 +23,13 @@ int sub(int x, int y)
 {
 	return(x - y); 
 }
-unsigned sqrt(double x)
+float sq(float x)
 {
-	unsigned div = 1, rslt = 0;
-	while (x > 0)
+	float s=x,a=1,b=x;
+	while (fabs(a-b) > 0.0000000001)
 	{
-		x -= div, div += 2;
-		rslt += x < 0 ? 0 : 1;
+		a=(a+b)/2;
+		b=S/a;
 	}
-	return rslt;
+	return (a+b)/2;
 }
