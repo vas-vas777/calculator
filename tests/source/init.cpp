@@ -29,7 +29,7 @@ SCENARIO("calculator pow", "[pow]") {
     float x =4 ;
     float y =1 ;
     
-    float rv = pov( x, y );
+    float rv = pow( x, y );
     
 	REQUIRE( rv ==4.0 );
 }
