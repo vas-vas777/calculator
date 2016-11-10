@@ -45,7 +45,7 @@ SCENARIO("calculator sqrt", "[sqrt]") {
     int x =4 ;
     int y =1 ;
     
-    int rv = sqrt( x, y );
+    int rv = sqrt( x );
     
 	REQUIRE( rv ==2 );
 }
