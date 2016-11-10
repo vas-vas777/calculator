@@ -21,7 +21,7 @@ SCENARIO("calculator dev", "[dev]") {
     float x =4 ;
     float y =1 ;
     
-    float rv = sum( x, y );
+    float rv = dev( x, y );
     
 	REQUIRE( rv ==4.0 );
 }
@@ -29,7 +29,7 @@ SCENARIO("calculator pow", "[pow]") {
     float x =4 ;
     float y =1 ;
     
-    float rv = sum( x, y );
+    float rv = pov( x, y );
     
 	REQUIRE( rv ==4.0 );
 }
@@ -37,7 +37,7 @@ SCENARIO("calculator sub", "[sub]") {
     float x =4 ;
     float y =1 ;
     
-    float rv = sum( x, y );
+    float rv = sub( x, y );
     
 	REQUIRE( rv ==3.0 );
 }
