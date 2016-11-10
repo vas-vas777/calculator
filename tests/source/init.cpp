@@ -41,11 +41,11 @@ SCENARIO("calculator sub", "[sub]") {
     
 	REQUIRE( rv ==3 );
 }
-SCENARIO("calculator sqrt", "[sqrt]") {
+SCENARIO("calculator sq", "[sq]") {
     int x =4 ;
     int y =1 ;
     
-    int rv = sqrt( x );
+    int rv = sq( x );
     
 	REQUIRE( rv ==2 );
 }
