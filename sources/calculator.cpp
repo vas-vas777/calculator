@@ -10,6 +10,10 @@ float dev(float x, float y)
 {
 	return(x / y);
 }
+float sub(float x, float y)
+{
+	return(x - y);
+}
 float pow ( float a )
 {
 	unsigned int s = 2;
