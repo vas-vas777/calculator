@@ -7,7 +7,7 @@ SCENARIO("calculator sum", "[sum]") {
     
     float rv = sum( x, y );
     
-	REQUIRE( rv ==5 );
+	REQUIRE( rv ==5.0 );
 }
 SCENARIO("calculator mult", "[mult]") {
     float x =4 ;
@@ -15,7 +15,7 @@ SCENARIO("calculator mult", "[mult]") {
     
     float rv = mult( x, y );
     
-	REQUIRE( rv ==4 );
+	REQUIRE( rv ==4.0 );
 }
 SCENARIO("calculator dev", "[dev]") {
     float x =4 ;
@@ -23,7 +23,7 @@ SCENARIO("calculator dev", "[dev]") {
     
     float rv = sum( x, y );
     
-	REQUIRE( rv ==4 );
+	REQUIRE( rv ==4.0 );
 }
 SCENARIO("calculator pow", "[pow]") {
     float x =4 ;
@@ -31,7 +31,7 @@ SCENARIO("calculator pow", "[pow]") {
     
     float rv = sum( x, y );
     
-	REQUIRE( rv ==4 );
+	REQUIRE( rv ==4.0 );
 }
 SCENARIO("calculator sub", "[sub]") {
     float x =4 ;
@@ -39,7 +39,7 @@ SCENARIO("calculator sub", "[sub]") {
     
     float rv = sum( x, y );
     
-	REQUIRE( rv ==3 );
+	REQUIRE( rv ==3.0 );
 }
 SCENARIO("calculator sq", "[sq]") {
     float x =4 ;
@@ -47,5 +47,5 @@ SCENARIO("calculator sq", "[sq]") {
     
     float rv = sq( x );
     
-	REQUIRE( rv ==2 );
+	REQUIRE( rv ==2.0 );
 }
