@@ -1,35 +1,31 @@
-int sum(int x, int y)
+float sum(float x, float y)
 {
 	return (x + y);
 }
-int mult(int x, int y)
+float mult(float x, float y)
 {
 	return (x*y);
 }
-int dev(int x, int y)
+float dev(float x, float y)
 {
 	return(x / y);
 }
-int pow(int x, int y)
+float pow(float x, float y)
 {
-	int p = 1, i;
+	unsigned int p = 1, i;
 	for (i = 1; i <= y; i++) 
 	{
 		p = p*x;
 	}
 	return(p);
 }
-int sub(int x, int y)
-{
-	return(x - y); 
-}
 float sq(float x)
 {
-	float s=x,a=1,b=x;
-	while (fabs(a-b) > 0.0000000001)
+	unsigned int div = 1, rslt = 0;
+	while (x > 0)
 	{
-		a=(a+b)/2;
-		b=S/a;
+		x -= div, div += 2;
+		rslt += x < 0 ? 0 : 1;
 	}
-	return (a+b)/2;
+	return rslt;
 }
