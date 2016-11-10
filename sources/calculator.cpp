@@ -8,7 +8,7 @@ float mult(float x, float y)
 }
 float dev(float x, float y)
 {
-	return(x / y);
+	return float(x / y);
 }
 float sub(float x, float y)
 {
