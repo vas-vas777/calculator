@@ -25,6 +25,7 @@ float pow ( float a )
 		else a = 1.0;
 	
 	return (float) a;
+}
 float sq(float x)
 {
 	unsigned int div = 1, rslt = 0;
