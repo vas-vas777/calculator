@@ -29,9 +29,9 @@ SCENARIO("calculator pow", "[pow]") {
     float x =4 ;
     float y =1 ;
     
-    float rv = pow( x, y );
+    float rv = pow( x );
     
-	REQUIRE( rv ==4.0 );
+	REQUIRE( rv ==16.0 );
 }
 SCENARIO("calculator sub", "[sub]") {
     float x =4 ;
