@@ -12,7 +12,7 @@ int main()
 	r = sum(a, b);   printf("r=%f", r);
 	r2 = mult(a, b); printf("\nr2=%f", r2);
 	r3 = dev(a, b);  printf("\nr3=%f", r3);
-	r4 = pow(a,b);    printf("\nr4=%f", r4); 
+	r4 = pow(a);    printf("\nr4=%f", r4); 
 	r5 = sub(a, b);  printf("\nr5=%f", r5);
 	r6 = sq(a);   printf("\nr6=%f", r6);
 	_getch();
