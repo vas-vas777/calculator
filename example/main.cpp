@@ -16,7 +16,7 @@ int main()
         cout << "Forbidden" << endl;
     else    
     cout << dev( x, y ) << endl; 
-    cout << pow( x, y ) << endl;
+    cout << power( x, y ) << endl;
     if (x >= 0)
     cout << sq( x ) << endl;
     else
