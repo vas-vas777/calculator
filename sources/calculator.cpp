@@ -14,11 +14,11 @@ float sub(float x, float y)
 {
 	return(x - y);
 }
-float pow ( float x, float y )
+float pow (float x, float y)
 {
       int b;
 	b=1;
-          for (int i=0; i<=y-1; i++)
+          for (int i = 0; i <= y-1; i++)
 	  {
 	         b = b * x;
           }
