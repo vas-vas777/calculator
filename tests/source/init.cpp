@@ -25,7 +25,7 @@ SCENARIO("calculator dev", "[dev]") {
     
 	REQUIRE( rv ==4.0 );
 }
-SCENARIO("calculator pow", "[pow]") {
+SCENARIO("calculator power", "[power]") {
     float x =4.0 ;
     float y =1.0 ;
     
