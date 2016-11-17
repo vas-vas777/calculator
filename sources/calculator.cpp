@@ -14,21 +14,15 @@ float sub(float x, float y)
 {
 	return(x - y);
 }
-float pow ( float x )
+float pow ( float x, float y )
 {
-	unsigned int s = 2;
-	float a2 = x;
-	
-	if ( s != 0 ) 
-	{
-			for (int i = 1; i < s; i++)
-		{
-			x = x * a2;
-		}
-	}
-		else x = 1.0;
-	
-	return (float) x;
+      int b;
+	b=1;
+          for (int i=0; i<=y-1; i++)
+	  {
+	         b = b * x;
+          }
+	return b;
 }
 float sq(float x)
 {
