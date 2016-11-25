@@ -13,7 +13,7 @@ int main()
     cout << sub( x, y ) << endl;
     cout << mult( x, y ) << endl;
     float *s=dev(x, y);
-    if (s != 0)
+    if (s)
         cout << *s << endl;
     else
         cout << "Forbidden" << endl;
