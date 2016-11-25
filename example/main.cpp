@@ -12,10 +12,12 @@ int main()
     cout << sum( x, y ) << endl;
     cout << sub( x, y ) << endl;
     cout << mult( x, y ) << endl;
-    if (y == 0)
+    float *s=dev(x, y);
+    if (s != 0)
+        cout << *s << endl;
+    else
         cout << "Forbidden" << endl;
-    else    
-    cout << *dev( x, y ) << endl; 
+    delete s;
     cout << power( x, y ) << endl;
     if (x >= 0)
     cout << sq( x ) << endl;
