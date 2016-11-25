@@ -10,13 +10,13 @@ int main()
     cin >> x;
     if(!cin)
     {
-        cout << "Number req" << endl;
+        cout << "Number requared" << endl;
         return 0;
     }
     cin >> y;
     if(!cin)
     {
-        cout << "Number req" << endl;
+        cout << "Number requared" << endl;
         return 0;
     }     
     
