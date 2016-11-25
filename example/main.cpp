@@ -8,7 +8,17 @@ int main()
 {
     float x, y;
     cin >> x;
-    cin >> y;      
+    if(!cin)
+    {
+        cout << "Number req" << endl;
+        return 0;
+    }
+    cin >> y;
+    if(!cin)
+    {
+        cout << "Number req" << endl;
+        return 0;
+    }     
     
     cout << sum( x, y ) << endl;
     cout << sub( x, y ) << endl;
