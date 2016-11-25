@@ -21,7 +21,7 @@ SCENARIO("calculator dev", "[dev]") {
     float x =4.0 ;
     float y =1.0 ;
     
-    float rv = dev( x, y );
+    float rv = *dev( x, y );
     
 	REQUIRE( rv ==4.0 );
 }
