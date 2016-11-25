@@ -12,6 +12,7 @@ float *dev(float x, float y)
         {
 	float *s=new float;
 	*s= x/y;
+	return s;	
         }
 	else
 	return nullptr;
