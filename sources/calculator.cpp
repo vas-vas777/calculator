@@ -6,9 +6,15 @@ float mult(float x, float y)
 {
 	return (x*y);
 }
-float dev(float x, float y)
+float *dev(float x, float y)
 {
-	return float(x / y);
+	if (y != 0)
+        {
+	float *s=new float;
+	*s= x/y;
+        }
+	else
+	return nullptr;
 }
 float sub(float x, float y)
 {
