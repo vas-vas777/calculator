@@ -8,7 +8,7 @@ float mult(float x, float y)
 }
 float *dev(float x, float y)
 {
-	if (y != 0)
+	if (y)
         {
 	float *s=new float;
 	*s= x/y;
