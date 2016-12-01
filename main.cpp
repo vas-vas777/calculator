@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstddef>
-#include "calculator.hpp"
 using namespace std;
 float sum(float x, float y)
 { 
@@ -46,9 +45,7 @@ float sq(float x)
 }
 int main()
 {    
-     float x, y;    
-     cin >> x;        
-     cin >> y;            
+     float x=3, y=2;                
      cout << sum( x, y ) << endl;   
      cout << sub( x, y ) << endl;    
      cout << mult( x, y ) << endl;    
