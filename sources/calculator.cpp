@@ -23,6 +23,14 @@ float sub(float x, float y)
 }
 float power (float x, float y)
 {
+	if (y==0)
+		return 1;
+	float t;
+	if (y<0)
+		t=1./(pow(x,(abs(y)));
+		      return t;
+		      if (y>0)
+		      {
       float b;
 	b=1;
           for (int i = 0; i <= y-1; i++)
@@ -30,14 +38,20 @@ float power (float x, float y)
 	         b = b * x;
           }
 	return b;
+		      }
 }
-float sq(float x)
+float *sq(float x)
 {
+	if (x>0)
+	{
 	unsigned int div = 1, rslt = 0;
 	while (x > 0)
 	{
 		x -= div, div += 2;
 		rslt += x < 0 ? 0 : 1;
 	}
+		
 	return rslt;
+	}
+return nullptr;
 }
