@@ -21,7 +21,7 @@ SCENARIO("calculator dev", "[dev]") {
     float x =4.0 ;
     float y =0.0 ;
     
-    float rv = *dev( x, y );
+    float *rv = dev( x, y );
     
 	REQUIRE( rv ==nullptr );
 }
@@ -45,7 +45,7 @@ SCENARIO("calculator sq", "[sq]") {
     float x =-4.0 ;
     float y =1.0 ;
     
-    float rv = *sq( x );
+    float *rv = sq( x );
     
 	REQUIRE( rv ==nullptr );
 }
