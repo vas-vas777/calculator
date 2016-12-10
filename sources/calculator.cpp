@@ -25,10 +25,18 @@ float power (float x, float y)
 {
 	if (y==0)
 		return 1;
-	float t;
+	
 	if (y<0)
-		t=1./(pow(x,(abs(y)));
-		      return t;
+	{
+		 float s=1,t;
+		 y=y*(-1);
+		 for (int i=0; i<=y-1; i++)
+		 {
+			 s=s*x
+		 }
+		 t=1./s;
+		 return t;
+	}
 		      if (y>0)
 		      {
       float b;
@@ -42,6 +50,8 @@ float power (float x, float y)
 }
 float *sq(float x)
 {
+	 if (x==0)
+		 return 0;
 	if (x>0)
 	{
 	unsigned int div = 1, rslt = 0;
@@ -53,5 +63,6 @@ float *sq(float x)
 		
 	return rslt;
 	}
+	 if (x<0)
 return nullptr;
 }
