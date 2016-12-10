@@ -32,7 +32,7 @@ float power (float x, float y)
 		 y=y*(-1);
 		 for (int i=0; i<=y-1; i++)
 		 {
-			 s=s*x
+			 s=s*x;
 		 }
 		 t=1./s;
 		 return t;
@@ -54,7 +54,7 @@ float *sq(float x)
 		 return 0;
 	if (x>0)
 	{
-	unsigned int div = 1, rslt = 0;
+	float div = 1, rslt = 0;
 	while (x > 0)
 	{
 		x -= div, div += 2;
