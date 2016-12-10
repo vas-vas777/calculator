@@ -54,14 +54,15 @@ float *sq(float x)
 		 return 0;
 	if (x>0)
 	{
-	float div = 1, rslt = 0;
+		 float *s=new float;
+	float div = 1;
 	while (x > 0)
 	{
 		x -= div, div += 2;
-		rslt += x < 0 ? 0 : 1;
+		*s += x < 0 ? 0 : 1;
 	}
 		
-	return rslt;
+	return s;
 	}
 	 if (x<0)
 return nullptr;
