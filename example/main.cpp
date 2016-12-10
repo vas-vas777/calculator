@@ -22,9 +22,11 @@ int main()
         cout << "Forbidden" << endl;
     delete s;
     cout << power( x, y ) << endl;
-    if (x >= 0)
-    cout << sq( x ) << endl;
+    float *res = sq(x);
+    if (res)
+    cout << *res << endl;
     else
-    cout << "Forbidden" << endl;    
+    cout << "Forbidden" << endl;
+    delete res;
     return 0;
 }
