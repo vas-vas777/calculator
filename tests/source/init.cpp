@@ -19,19 +19,19 @@ SCENARIO("calculator mult", "[mult]") {
 }
 SCENARIO("calculator dev", "[dev]") {
     float x =4.0 ;
-    float y =1.0 ;
+    float y =0.0 ;
     
     float rv = *dev( x, y );
     
-	REQUIRE( rv ==4.0 );
+	REQUIRE( rv ==nullptr );
 }
 SCENARIO("calculator power", "[power]") {
     float x =4.0 ;
-    float y =1.0 ;
+    float y =-1.0 ;
     
     float rv = pow( x, y );
     
-	REQUIRE( rv ==4.0 );
+	REQUIRE( rv ==0.25 );
 }
 SCENARIO("calculator sub", "[sub]") {
     float x =4.0 ;
@@ -42,10 +42,10 @@ SCENARIO("calculator sub", "[sub]") {
 	REQUIRE( rv ==3.0 );
 }
 SCENARIO("calculator sq", "[sq]") {
-    float x =4.0 ;
+    float x =-4.0 ;
     float y =1.0 ;
     
-    float rv = sq( x );
+    float rv = *sq( x );
     
-	REQUIRE( rv ==2.0 );
+	REQUIRE( rv ==nullptr );
 }
